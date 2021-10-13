@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Naukri_react/static/css/main.9fd48ca0.chunk.css",
+    "main.js": "/Naukri_react/static/js/main.91b19ff4.chunk.js",
+    "main.js.map": "/Naukri_react/static/js/main.91b19ff4.chunk.js.map",
+    "runtime-main.js": "/Naukri_react/static/js/runtime-main.c239a42e.js",
+    "runtime-main.js.map": "/Naukri_react/static/js/runtime-main.c239a42e.js.map",
+    "static/js/2.8c51b2ee.chunk.js": "/Naukri_react/static/js/2.8c51b2ee.chunk.js",
+    "static/js/2.8c51b2ee.chunk.js.map": "/Naukri_react/static/js/2.8c51b2ee.chunk.js.map",
+    "index.html": "/Naukri_react/index.html",
+    "static/css/main.9fd48ca0.chunk.css.map": "/Naukri_react/static/css/main.9fd48ca0.chunk.css.map",
+    "static/js/2.8c51b2ee.chunk.js.LICENSE.txt": "/Naukri_react/static/js/2.8c51b2ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c239a42e.js",
+    "static/js/2.8c51b2ee.chunk.js",
+    "static/css/main.9fd48ca0.chunk.css",
+    "static/js/main.91b19ff4.chunk.js"
+  ]
+}
