@@ -13,7 +13,7 @@ function UpperOption() {
         <div>
             <br/>
            <center> <select onChange={changeApp}>
-                <option value="0"></option>
+                <option value="0">Choose Post</option>
                 {Object.keys(application).map((value)=>{
                     return <option key={value} value={value}>{value}</option>
                 })}

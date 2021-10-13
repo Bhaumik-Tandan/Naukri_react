@@ -3,6 +3,7 @@ import UpperOption from './upperoption/main';
 import Applications from './applications/application';
 import { restCon } from '../../restCon';
 import {useApplicationSet} from "./dataHook";
+import Loading from '../../loading/main';
 function AppMain() {
     const [status,setStatus]=useState(1);
     const ApplicationSet=useApplicationSet();
@@ -41,7 +42,7 @@ function AppMain() {
 
     return (
         <div>
-            {status?<>Loading..</>:<><UpperOption/><Applications/></>}
+            {status?<Loading text="Loading Applications"/>:<><UpperOption/><Applications/></>}
         </div>
     )
 }
