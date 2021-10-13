@@ -23,19 +23,17 @@ function Company() {
     return (
         <div>
           {loading? <Loading text="Submitting"/>:
-          <>
-           <center> <h1>Add Job</h1></center>
+           <center> <h1>Add Job</h1>
            <form onSubmit={handleSubmit(onSubmit)}>
              <label>Post</label><br/>
            <input {...register("post", { required: true })} /><br/>
            <label>Salary</label><br/>
            <input type="number" {...register("salary", { required: true })} placeholder="In $" /><br/>
            <label>Location</label><br/>
-           <input {...register("location", { required: true })} /><br/>
+           <input {...register("location", { required: true })} /><br/><br/>
            <input type="submit" /><br/>
            {status}
-      </form>
-      </>}
+      </form></center>}
         </div>
     )
 }

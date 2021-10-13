@@ -1,12 +1,14 @@
 import React from 'react'
 import {useApplication,useCurrentlySelectedSet} from "../dataHook";
+import {usePageNoSet} from "../applications/pagging/pageNoHook";
 function UpperOption() {
     const application=useApplication();
     const setSelected=useCurrentlySelectedSet();
-
+    const setPageNo=usePageNoSet();
     function changeApp(e)
     {
         setSelected(e.target.value);
+        setPageNo(0);//set page no. on change
     }
 
     return (

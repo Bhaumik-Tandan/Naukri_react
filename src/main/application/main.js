@@ -4,6 +4,7 @@ import Applications from './applications/application';
 import { restCon } from '../../restCon';
 import {useApplicationSet} from "./dataHook";
 import Loading from '../../loading/main';
+import PageNoHook from './applications/pagging/pageNoHook';
 function AppMain() {
     const [status,setStatus]=useState(1);
     const ApplicationSet=useApplicationSet();
@@ -42,7 +43,7 @@ function AppMain() {
 
     return (
         <div>
-            {status?<Loading text="Loading Applications"/>:<><UpperOption/><Applications/></>}
+            {status?<Loading text="Loading Applications"/>:<PageNoHook><UpperOption/><Applications/></PageNoHook>}
         </div>
     )
 }

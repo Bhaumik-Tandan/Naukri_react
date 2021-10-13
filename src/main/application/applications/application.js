@@ -1,16 +1,17 @@
 import React from 'react'
 import {useApplication,useCurrentlySelected} from "../dataHook";
-import Individual from './individualApplication/individual';
+import Pagging from './pagging/pagging';
 function Applications() {
     const CurrentlySelected=useCurrentlySelected();
     const application=useApplication();
+    
     return (
         <div>
             <br/>
-           <center> {CurrentlySelected=="0"?"":<>
-            {application[CurrentlySelected].map((data,index)=>{
-                    return <Individual data={data} key={index}/>
-                })}</>}
+           <center> {CurrentlySelected=="0"?
+           "":          
+               <Pagging data={application[CurrentlySelected]}/>
+            }
             </center> 
         </div>
     )
